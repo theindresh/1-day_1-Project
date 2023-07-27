@@ -4,7 +4,8 @@
 p{
     display: flex;
     justify-content: center;
-    color: yellow;
-    background-color: burlywood;
+    color: rgb(5, 255, 80);
     margin-top: 300px;
+    font-size: 100px;
+    font-weight: bold;
 }
