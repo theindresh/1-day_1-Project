@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+}
+p{
+    display: flex;
+    justify-content: center;
+    color: yellow;
+    background-color: burlywood;
+    margin-top: 300px;
+}
