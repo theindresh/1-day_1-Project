@@ -3,23 +3,23 @@
     width: 500px;
     height: 600px;
     margin-left: 450px;
+    border: 2px solid black;
+    border-radius: 5px;
 }
 #name{
     width: 500px;
     height: 60px;
     border-bottom: 2px solid black;
-    /* text-align: center; */
 }
 #name h1{
 
     padding-left: 150px;
     margin: 0;
-    /* text-decoration: center; */
 }
 #name h3{
     padding-left: 192px;
     margin: 0;
-    /* text-align: center; */
+
 }
 #address{
     width: 500px;
@@ -34,9 +34,15 @@
 }
 #total_price{
     width: 500px;
-    height: 840px;
+    height: 76px;
     border-bottom: 2px solid black;
 }
+#total{
+    width: 500px;
+    height: 10px;
+    /* border-bottom: 2px solid black; */
+}
+
 dl{
     display: grid;
     grid-template-columns: 3fr 9fr;
@@ -44,14 +50,12 @@ dl{
     margin-left: 30px;
 }
 dt{
-    /* background-color: gray; */
     color: black;
     padding: 5px;
     margin-bottom: 5px;
     margin-left: 4px;
 }
 dd{
-    /* background-color: rgb(206, 33, 33); */
     color: black;
     padding: 5px;
     margin-bottom: 5px;
