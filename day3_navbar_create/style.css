@@ -38,6 +38,7 @@ body {
   margin-top: 20px;
   text-decoration: none;
   font-size: 15px;
+  color: crimson;
 }
 
 #main {
@@ -67,4 +68,11 @@ h1 span{
   font-size: 20px;
   /* transform: rotate(20deg); */
   transition: 100ms;
+  color: rgb(129, 27, 27);
+}
+.logo:hover{
+  /* font-size: 20px; */
+  /* transform: rotate(20deg); */
+  transition: 100ms;
+  color: coral;
 }
