@@ -60,6 +60,9 @@ p{
   text-align: center;
   font-weight: bold;
 }
+p span{
+  color: #5b00ec;
+}
 h1 span{
   color: #432279;
   margin-left: 5px;
