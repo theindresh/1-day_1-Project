@@ -93,7 +93,9 @@
 
         function ShowCart() {
             document.querySelector("tbody").innerHTML = "";
-            for (var item of CartItems) {
+            for (var i = 0; i < CartItems.length; i++) {
+                var item = CartItems[i];
+
                 var tr = document.createElement("tr");
                 var tdTitle = document.createElement("td");
                 var tdPrice = document.createElement("td");
@@ -109,11 +111,20 @@
                 img.src = item.image;
 
                 tdPhoto.appendChild(img);
-                tdRemove.innerHTML = `
-                    <button class="btn btn-outline-danger">
-                        <span class="bi bi-trash2-fill"></span>
-                    </button>
+
+                var removeButton = document.createElement("button");
+                removeButton.className = "btn btn-outline-danger";
+                removeButton.innerHTML = `
+                    <span class="bi bi-trash2-fill"></span>
                 `;
+                // Attach a click event listener to remove the item from the cart
+                removeButton.addEventListener("click", (function (index) {
+                    return function () {
+                        RemoveFromCart(index);
+                    };
+                })(i));
+
+                tdRemove.appendChild(removeButton);
 
                 tr.appendChild(tdTitle);
                 tr.appendChild(tdPrice);
@@ -122,6 +133,13 @@
 
                 document.querySelector("tbody").appendChild(tr);
             }
+        }
+
+        // Function to remove item from the cart
+        function RemoveFromCart(index) {
+            CartItems.splice(index, 1);
+            GetCartItemsCount();
+            ShowCart(); // Update the cart display
         }
     </script>
 </head>
