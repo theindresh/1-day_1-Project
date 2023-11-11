@@ -1,0 +1,17 @@
+[
+    {
+        "Name": "Winter jacket",
+        "Price": 500.42,
+        "Photo": "../img/1.jpg"
+    },
+    {
+        "Name": "Hiking boots",
+        "Price": 120.99,
+        "Photo": "../img/2.jpg"
+    },
+    {
+        "Name": "Fleece sweater",
+        "Price": 39.95,
+        "Photo": "../img/3.jpg"
+    }
+]
